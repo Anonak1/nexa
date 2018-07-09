@@ -11,7 +11,7 @@ bot.on("ready", function() {
 
 bot.on("guildMemberAdd", member =>{
     
-    member.guild.channels.find('name', 'arrivée').send(`Bienvenue ${member.user.username}! \n Lis les règles du serveur dans le channel #règles-et-droits-d-auteurs🎬💻 pour pouvoir rejoindre les channels de discussion, c'est important! ;)` );
+    member.guild.channels.find('name', 'arrivée').send(`Bienvenue ${member.user.username}! \n Lis les règles du serveur dans le channel #règles-et-droits-d-auteurs🎬💻 et reviens cliquer sur le bouton valider ou le bouton croix juste en dessous de ce message, suivant si tu acceptes ou non les règles de ce serveur. Tu pourras ensuite rejoindre les channels de discussion, c'est important de connaître les règles avant tout! ;)` );
 
     console.log(`User ${member.user.username} has joined the server!`);
 
@@ -21,9 +21,8 @@ bot.on("guildMemberAdd", member =>{
 
     bot.on('message', function(message){
         if (message.author.id === '463767052524584982'){
-                
-                   message.react("✅")
-                   message.react("❌")
+                setTimeout((function(){message.react("✅")}), 20000);
+                setTimeout((function(){message.react("❌")}), 500);
              }
     
     
