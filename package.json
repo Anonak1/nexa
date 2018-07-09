@@ -1,0 +1,14 @@
+{
+  "name": "nexa",
+  "version": "1.0.0",
+  "description": "I'm a simple bot for discord, call me 'Nexa' and i'll do anything for you!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AnonAk",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
