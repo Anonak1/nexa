@@ -21,8 +21,11 @@ bot.on("guildMemberAdd", member =>{
 
     bot.on('message', function(message){
         if (message.author.id === '463767052524584982'){
-                setTimeout((function(){message.react("✅")}), 20000);
-                setTimeout((function(){message.react("❌")}), 500);
+                setTimeout((function(){message.react("✅")
+                        setTimeout((function(){message.react("❌")}), 500);              
+                                      
+                           }), 20000);
+                
              }
     
     
